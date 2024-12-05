@@ -14,6 +14,9 @@ public class Calculator {
         }
         return a/b;
     }
+    public double sqrt(double a) {
+        return Math.sqrt(a);
+    }
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
@@ -23,5 +26,6 @@ public class Calculator {
         if (calculator.divide(0,5)==0){
             System.out.println("Error");
         }
+        System.out.println("Arrel Quadrada: " + calculator.sqrt(10));
     }
 }
